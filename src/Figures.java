@@ -1,7 +1,10 @@
  final class Figures {
-   static void show(){
-       System.out.println(new Circle().print() + ", " + new Quad().print() + ", "
-               + new Square().print() + ", " + new Triangle().print() + ", "
-               + new Parallelogram().print()+ ".");
+   static String show(Shape shape){
+       return shape.print();
+   }
+   static void showAll(){
+       System.out.println(show(new Circle()) + ", " + show(new Quad()) + ", "
+               +  show(new Square()) + ", " +  show(new Triangle()) + ", "
+               +  show(new Parallelogram())+ ".");
    }
 }
